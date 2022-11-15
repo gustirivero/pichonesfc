@@ -1,0 +1,368 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: grid;
+}
+
+
+.escudo {
+    width: 100%;
+ height: 100%;
+ position: absolute;
+ opacity: 0.20;
+
+}
+
+.header-container {
+    display: flex;
+    position: relative;
+    
+}
+
+.caja__fixed {
+    font-size: 20px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
+    z-index: 1000;
+    border-bottom: 2px groove violet;
+    letter-spacing: 10px;
+    
+}
+
+.nav {
+    padding: 5px;
+    font-size: 14px;
+    margin: 5px;
+    width: 100%;
+    position: fixed;
+    background-color: blueviolet;
+    opacity: 0.8;
+    z-index: 900;
+    letter-spacing: 2px;
+    
+}
+
+.nav > a {
+    color: white:
+}
+
+
+
+.div-container {
+     margin-top: 115px;
+     margin-left: 5px;
+    padding: 10px;
+    display: inline-block;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-auto-flow: dense;
+    justify-self: center;
+    background-color: violet;
+    border: 4px solid blueviolet;
+}
+
+.div__h1 {
+    display: grid;
+    justify-content: center;
+    background-color: violet;
+    color: blueviolet;
+    padding: 5px;
+    
+}
+
+
+.div-container > p {
+    font-size: 18px;
+    max-width: 70%;
+    color: blueviolet;
+    background-color: violet;
+    padding: 20px;
+
+
+}
+
+.div-container > img {
+    margin-top: -30px;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border: 3px solid blueviolet;
+    object-fit: cover;
+    float: right;
+    z-index: 100;
+}
+
+
+
+
+/*titulo con imagen 2 */
+
+.container-h2 {
+    min-width: 500px;
+    min-height: 500px;
+    max-height: 500px ;
+    display: inline-block;
+    padding: 15px;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, 1fr);
+    margin-top: 50px;
+    margin-left: 5px;
+    max-height: 700px;
+    grid-auto-flow: dense;
+    justify-self: center;
+    position: relative;
+    border: 4px solid blueviolet;
+    background-color: violet;
+}
+
+
+
+.tittle__h2 {
+    flex: 1;
+    padding: 15px;
+    flex: 3;
+    font-size: 40px;
+    text-align: center;
+    background-color: violet;
+    color: blueviolet;
+
+
+}
+
+.tittle-h2__p {
+    flex: 3;
+    padding: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: violet;
+    margin-left: -10px;
+}
+
+.imagen__img {
+    width: 350px;
+    height: 350px;
+    flex: 1;
+    float: right;
+    object-fit: cover;
+    background-color: violet;
+    border: 4px groove blueviolet;
+}
+
+
+.form-flex-container {
+    min-width: 400px;
+    margin: 5px;
+    max-width: 25%;
+    max-height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    background-color: black;
+    border: 4px groove blueviolet;
+}
+
+.form {
+   background-color: black;
+
+}
+
+.form__input {
+    min-width: 300px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+     border: none;
+    border-bottom: 2px solid white;
+   margin: auto;
+}
+
+
+.form__input:first-child {
+    margin-top: 10px;
+
+}
+
+.form__input:last-child:hover {
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.img-container {
+    max-width: 290px;
+    max-height: 800px;
+  padding: 10px;
+  border-radius: 30px;
+  align-self: center;
+}
+
+.flex-containers {  
+max-width: 100%;
+padding: 30px;
+display: flex;
+border: 5px groove #80f;
+margin: 5px;
+flex-direction: row;
+flex-wrap: wrap;
+background-color: violet;
+justify-content:space-evenly;
+
+
+}
+
+
+.flex-items {
+    width: 200px;
+    width: 200px;
+    min-width: 250px;
+    min-height: 250px;
+    font-size: 15px;
+    padding: 20px;
+    margin: 15px;
+    align-self: center;
+
+    
+}
+
+.flex-items:first-child {
+    background-color: blue;
+    order: 1;
+
+}
+
+.flex-items:nth-child(2) {
+    background-color: lightpink;
+    order: 2;
+}
+
+.flex-items:nth-child(3) {
+    background-color: green;
+    order: 2;
+}
+
+.flex-items:nth-child(4) {
+    background-color: lightgreen;
+    order: 3;
+    align-self: stretch;
+
+}
+
+
+.flex-items:last-child {
+    background-color: yellow;
+    border: 4px groove blueviolet;
+    order: 4;
+}
+
+/* SECCION MI PERFIL */
+
+.container-imagen {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    transform: translate(20px, 150px);
+    border-radius: 50%; 
+    opacity: 0.7;
+    
+}
+
+.imagen-pichon {
+    border: 4px solid blueviolet;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.formulario-container {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    transform: scale(700px, 700px);
+}
+
+.input-items__miperfil {
+    width: 100%;
+    padding: 20px;
+}
+
+.input-imagen {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+/* SECCION SOBRE NOSOTROS */
+
+.fichadejugadores-img {
+    background-color: blueviolet;
+    margin-left: 5px;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    border: 2px solid blueviolet;
+    box-shadow: 1px 1px 15px 3px white;
+    
+}
+
+.fichadejugadores-img > h2 {
+    font-size: 22px;
+    padding: 3px;
+    display: inline-block;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    text-shadow: 1px 1px 10px 2px white;
+}
+
+
+.fichadejugadores-img > img {
+    
+    margin: 5px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 10px 2px white;
+    border: 3px groove blueviolet;
+    position: relative;
+    width: 220px;
+    height: 320px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.pol, .diego, .coche, .chelo, .gaber, .viotto, .nick, .roni, .flaki, .gusty, .ari, .docla, .ceso {
+    font-size: 22px;
+    top: -300px;
+    left: 250px;
+    position: relative;
+    display: inline-block;
+   background-color: blueviolet;
+}
+
+
+
+
+.footer {
+    text-align: center;
+    background-color: red;
+    background-color: #80f;
+}
+
+
+
+
